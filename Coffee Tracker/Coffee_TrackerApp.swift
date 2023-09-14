@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Coffee_TrackerApp: App {
+    
+    @State private var coffeeController = CoffeeController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environment(\.managedObjectContext, coffeeController.container.viewContext)
         }
     }
 }

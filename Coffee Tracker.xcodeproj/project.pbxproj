@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		B04D24FC2AB34B1F00BC3C4B /* Coffee_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D24FB2AB34B1F00BC3C4B /* Coffee_TrackerApp.swift */; };
-		B04D24FE2AB34B1F00BC3C4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D24FD2AB34B1F00BC3C4B /* ContentView.swift */; };
+		B04D24FE2AB34B1F00BC3C4B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D24FD2AB34B1F00BC3C4B /* MainView.swift */; };
 		B04D25002AB34B2100BC3C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04D24FF2AB34B2100BC3C4B /* Assets.xcassets */; };
 		B04D25032AB34B2100BC3C4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04D25022AB34B2100BC3C4B /* Preview Assets.xcassets */; };
+		B04D250A2AB35D3B00BC3C4B /* CoffeeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D25092AB35D3B00BC3C4B /* CoffeeDetail.swift */; };
+		B04D250C2AB361CE00BC3C4B /* AddCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D250B2AB361CE00BC3C4B /* AddCoffeeView.swift */; };
+		B04D25102AB3A44400BC3C4B /* Coffee Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B04D250E2AB3A44400BC3C4B /* Coffee Tracker.xcdatamodeld */; };
+		B04D25122AB3A4E500BC3C4B /* CoffeeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D25112AB3A4E500BC3C4B /* CoffeeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B04D24F82AB34B1F00BC3C4B /* Coffee Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04D24FB2AB34B1F00BC3C4B /* Coffee_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_TrackerApp.swift; sourceTree = "<group>"; };
-		B04D24FD2AB34B1F00BC3C4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B04D24FD2AB34B1F00BC3C4B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B04D24FF2AB34B2100BC3C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04D25022AB34B2100BC3C4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B04D25092AB35D3B00BC3C4B /* CoffeeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetail.swift; sourceTree = "<group>"; };
+		B04D250B2AB361CE00BC3C4B /* AddCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeView.swift; sourceTree = "<group>"; };
+		B04D250F2AB3A44400BC3C4B /* Coffee Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Coffee Tracker.xcdatamodel"; sourceTree = "<group>"; };
+		B04D25112AB3A4E500BC3C4B /* CoffeeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		B04D24FA2AB34B1F00BC3C4B /* Coffee Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				B04D250D2AB3A3C900BC3C4B /* DataModel */,
 				B04D24FB2AB34B1F00BC3C4B /* Coffee_TrackerApp.swift */,
-				B04D24FD2AB34B1F00BC3C4B /* ContentView.swift */,
+				B04D24FD2AB34B1F00BC3C4B /* MainView.swift */,
+				B04D250B2AB361CE00BC3C4B /* AddCoffeeView.swift */,
+				B04D25092AB35D3B00BC3C4B /* CoffeeDetail.swift */,
 				B04D24FF2AB34B2100BC3C4B /* Assets.xcassets */,
 				B04D25012AB34B2100BC3C4B /* Preview Content */,
 			);
@@ -65,6 +76,15 @@
 				B04D25022AB34B2100BC3C4B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B04D250D2AB3A3C900BC3C4B /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B04D250E2AB3A44400BC3C4B /* Coffee Tracker.xcdatamodeld */,
+				B04D25112AB3A4E500BC3C4B /* CoffeeController.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B04D24FE2AB34B1F00BC3C4B /* ContentView.swift in Sources */,
+				B04D25102AB3A44400BC3C4B /* Coffee Tracker.xcdatamodeld in Sources */,
+				B04D25122AB3A4E500BC3C4B /* CoffeeController.swift in Sources */,
+				B04D250A2AB35D3B00BC3C4B /* CoffeeDetail.swift in Sources */,
+				B04D24FE2AB34B1F00BC3C4B /* MainView.swift in Sources */,
+				B04D250C2AB361CE00BC3C4B /* AddCoffeeView.swift in Sources */,
 				B04D24FC2AB34B1F00BC3C4B /* Coffee_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +363,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B04D250E2AB3A44400BC3C4B /* Coffee Tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B04D250F2AB3A44400BC3C4B /* Coffee Tracker.xcdatamodel */,
+			);
+			currentVersion = B04D250F2AB3A44400BC3C4B /* Coffee Tracker.xcdatamodel */;
+			path = "Coffee Tracker.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B04D24F02AB34B1F00BC3C4B /* Project object */;
 }
